@@ -34,5 +34,23 @@ namespace ClassLibrary1
             return (Double)Result;
         }
 
+        public Int32 ArithmeticThird(Int32 First, Int32 Secound)
+        {
+            Result = First - Secound;
+            return (Int32)Result;
+        }
+
+        public Int32 ArithmeticFourth(Int32 First, Int32 Secound)
+        {
+            Result = First * Secound;
+            return (Int32)Result;
+        }
+
+        public Int32 ArithmeticFifth(Int32 First, Int32 Secound)
+        {
+            Result = First / Secound;
+            return (Int32)Result;
+        }
+
     }
 }

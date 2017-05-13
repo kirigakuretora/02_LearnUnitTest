@@ -64,7 +64,6 @@ namespace WebApplication1.Tests
             IsTrue = TestArithmeticBase.ArithmeticSecound(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
-
     }
 
 }

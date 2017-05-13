@@ -20,5 +20,16 @@ namespace ClassLibrary1
             return Result;
         }
 
+        public Int32 ArithmeticFourth(Int32 First, Int32 Secound)
+        {
+           Int32 Result = First * Secound;
+            return Result;
+        }
+
+        public Int32 ArithmeticFifth(Int32 First, Int32 Secound)
+        {
+            Int32 Result = First / Secound;
+            return Result;
+        }
     }
 }
