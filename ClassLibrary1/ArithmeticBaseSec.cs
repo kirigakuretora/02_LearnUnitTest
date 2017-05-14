@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class ArithmeticBaseSec
+    public sealed class ArithmeticBaseSec
     {
         /// <summary>
         ///  建構 Generic
         /// </summary>
         private object Result;
-        public void SetResult<T>(T tResult) 
+        private void SetResult<T>(T tResult) 
         {
             Result = tResult;
         }

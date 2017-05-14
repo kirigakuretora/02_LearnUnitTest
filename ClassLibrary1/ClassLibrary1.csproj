@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArithmeticAssembly.cs" />
     <Compile Include="ArithmeticBase.cs" />
     <Compile Include="ArithmeticBaseSec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

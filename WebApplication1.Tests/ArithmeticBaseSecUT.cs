@@ -23,7 +23,7 @@ namespace WebApplication1.Tests
 
 
         /// <summary>
-        /// Generic
+        /// Int32 + Int32 = Int32
         /// </summary>
         [TestMethod()]
         public void TestMethod4()
@@ -56,11 +56,11 @@ namespace WebApplication1.Tests
         [TestMethod()]
         public void TestMethod6()
         {
-            var TestArithmeticBase = new ArithmeticBaseSec();
+            var TestArithmeticBaseSec = new ArithmeticBaseSec();
             Double First = 1.9;
             Int32 Secound = 1;
             Double Result = 2.9;
-            IsTrue = TestArithmeticBase.ArithmeticSecound(First, Secound);
+            IsTrue = TestArithmeticBaseSec.ArithmeticSecound(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
     }

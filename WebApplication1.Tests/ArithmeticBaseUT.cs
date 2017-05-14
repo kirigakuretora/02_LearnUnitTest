@@ -8,10 +8,10 @@ namespace WebApplication1.Tests
     public class ArithmeticBaseUT
     {
         /// <summary>
-        ///  建構 Generic
+        /// 建構 Generic
         /// </summary>
         private Object IsTrue;
-        public void SetIsTrue<T>(T tIsTrue)
+        private void SetIsTrue<T>(T tIsTrue)
         {
             IsTrue = tIsTrue;
         }

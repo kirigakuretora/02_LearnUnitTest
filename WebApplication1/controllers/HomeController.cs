@@ -12,11 +12,16 @@ namespace WebApplication1.controllers
         // GET: Home
         public ActionResult Index()
         {
+            var ResultVersion = ArithmeticAssembly.GetArithmeticAssemblyVersion.version;
+
             var RelArithmeticBase = new ArithmeticBase();
             var Result = RelArithmeticBase.Arithmetic(1, 1);
             var ResultSecound = RelArithmeticBase.ArithmeticSecound(2.0, 2.1);
+
+            ViewData["ResultVersion"] = ResultVersion;
             ViewData["Result"] = Result;
             ViewData["ResultSecound"] = ResultSecound;
+
             return View();
         }
     }
