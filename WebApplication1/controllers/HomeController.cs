@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace WebApplication1.controllers
 {
-    public class HomeController : Controller
+    public class HomeController :System.Web.Mvc.Controller
     {
         // GET: Home
         public ActionResult Index()
@@ -24,5 +24,7 @@ namespace WebApplication1.controllers
 
             return View();
         }
+
+        
     }
 }

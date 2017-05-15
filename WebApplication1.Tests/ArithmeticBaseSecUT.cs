@@ -8,10 +8,10 @@ namespace WebApplication1.Tests
     public class ArithmeticBaseSecUT
     {
         /// <summary>
-        ///  建構 Generic
+        ///  Generic  Result
         /// </summary>
         private Object IsTrue;
-        public void SetIsTrue<T>(T tIsTrue)
+        private void SetIsTrue<T>(T tIsTrue)
         {
             IsTrue = tIsTrue;
         }
@@ -37,7 +37,7 @@ namespace WebApplication1.Tests
         }
 
         /// <summary>
-        /// Generic Double + Double = Double
+        /// Double + Double = Double
         /// </summary>
         [TestMethod()]
         public void TestMethod5()
@@ -51,7 +51,7 @@ namespace WebApplication1.Tests
         }
 
         /// <summary>
-        /// Generic  Double + Int32 = Double
+        /// Double + Int32 = Double
         /// </summary>
         [TestMethod()]
         public void TestMethod6()

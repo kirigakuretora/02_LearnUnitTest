@@ -9,7 +9,7 @@ namespace ClassLibrary1
     public sealed class ArithmeticBaseSec
     {
         /// <summary>
-        ///  建構 Generic
+        ///  Generic Result
         /// </summary>
         private object Result;
         private void SetResult<T>(T tResult) 
