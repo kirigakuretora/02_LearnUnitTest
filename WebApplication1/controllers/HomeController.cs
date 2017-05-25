@@ -17,10 +17,12 @@ namespace WebApplication1.controllers
             var RelArithmeticBase = new ArithmeticBase();
             var Result = RelArithmeticBase.Arithmetic(1, 1);
             var ResultSecound = RelArithmeticBase.ArithmeticSecound(2.0, 2.1);
+            var ResultThird = RelArithmeticBase.ArithmeticFifth(22.0, -7.0);
 
             ViewData["ResultVersion"] = ResultVersion;
             ViewData["Result"] = Result;
             ViewData["ResultSecound"] = ResultSecound;
+            ViewData["ResultThird"] = ResultThird;
 
             return View();
         }

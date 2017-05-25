@@ -63,5 +63,75 @@ namespace WebApplication1.Tests
             IsTrue = TestArithmeticBaseSec.ArithmeticSecound(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
+
+        /// <summary>
+        /// Tests the repeating decimal method.
+        /// </summary>
+        [TestMethod()]
+        public void TestRepeatingDecimalMethod()
+        {
+            var TestArithmeticBaseSec = new ArithmeticBaseSec();
+            Double First = 1.0;
+            Double Secound = 3;
+            Double Result = 0.33333; // 實際值: 0.333333.....
+            IsTrue = TestArithmeticBaseSec.ArithmeticFifth(First, Secound);
+            Assert.AreEqual(Result, IsTrue);
+        }
+
+        /// <summary>
+        /// Tests the circulating decimal method.
+        /// </summary>
+        [TestMethod()]
+        public void TestCirculatingDecimalMethod()
+        {
+            var TestArithmeticBaseSec = new ArithmeticBaseSec();
+            Double First = 22.0;
+            Double Secound = 7.0;
+            Double Result = 3.14286; // 實際值: 3.142857.....
+            IsTrue = TestArithmeticBaseSec.ArithmeticFifth(First, Secound);
+            Assert.AreEqual(Result, IsTrue);
+        }
+
+        /// <summary>
+        /// Tests the circulating decimal secound method.
+        /// </summary>
+        [TestMethod()]
+        public void TestCirculatingDecimalSecoundMethod()
+        {
+            var TestArithmeticBaseSec = new ArithmeticBaseSec();
+            Double First = 1.0;
+            Double Secound = 6.0;
+            Double Result = 0.16667; // 實際值: 0.166666....
+            IsTrue = TestArithmeticBaseSec.ArithmeticFifth(First, Secound);
+            Assert.AreEqual(Result, IsTrue);
+        }
+
+        /// <summary>
+        /// Tests the minus circulating decimalthirdd method.
+        /// </summary>
+        [TestMethod()]
+        public void TestMinusCirculatingDecimaldMethod()
+        {
+            var TestArithmeticBase = new ArithmeticBase();
+            Double First = 1.0;
+            Double Secound = -6.0;
+            Double Result = -0.16667; // 實際值: -0.166666....
+            IsTrue = TestArithmeticBase.ArithmeticFifth(First, Secound);
+            Assert.AreEqual(Result, IsTrue);
+        }
+
+        /// <summary>
+        /// Tests the minus circulating decimalthirdd method.
+        /// </summary>
+        [TestMethod()]
+        public void TestMinusCirculatingDecimalSecounddMethod()
+        {
+            var TestArithmeticBase = new ArithmeticBase();
+            Double First = -1.0;
+            Double Secound = -6.0;
+            Double Result = 0.16667; // 實際值: 0.166666....
+            IsTrue = TestArithmeticBase.ArithmeticFifth(First, Secound);
+            Assert.AreEqual(Result, IsTrue);
+        }
     }
 }
