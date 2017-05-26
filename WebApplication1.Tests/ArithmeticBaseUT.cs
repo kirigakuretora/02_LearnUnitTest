@@ -31,7 +31,7 @@ namespace WebApplication1.Tests
             Int32 First = 1;
             Int32 Secound = 2;
             Int32 Result = 3;
-            IsTrue = TestArithmeticBase.Arithmetic(First, Secound);
+            IsTrue = TestArithmeticBase.Addition(First, Secound);
             Assert.AreEqual(Result, IsTrue);
 
         }
@@ -47,7 +47,7 @@ namespace WebApplication1.Tests
             Double First = 50.1;
             Double Secound = 70.1;
             Double Result = 120.2;
-            IsTrue = TestArithmeticBase.ArithmeticSecound(First, Secound);
+            IsTrue = TestArithmeticBase.AdditionSecound(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
 
@@ -61,7 +61,7 @@ namespace WebApplication1.Tests
             Double First = 1.9;
             Int32 Secound = 1;
             Double Result = 2.9;
-            IsTrue = TestArithmeticBase.ArithmeticSecound(First, Secound);
+            IsTrue = TestArithmeticBase.AdditionSecound(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
 
@@ -75,7 +75,7 @@ namespace WebApplication1.Tests
             Double First = 1.0;
             Double Secound = 3;
             Double Result = 0.33333; // 實際值: 0.333333.....
-            IsTrue = TestArithmeticBase.ArithmeticFifth(First, Secound);
+            IsTrue = TestArithmeticBase.Division(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
 
@@ -89,7 +89,7 @@ namespace WebApplication1.Tests
             Double First = 22.0;
             Double Secound = 7.0;
             Double Result = 3.14286; // 實際值: 3.142857.....
-            IsTrue = TestArithmeticBase.ArithmeticFifth(First, Secound);
+            IsTrue = TestArithmeticBase.Division(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
 
@@ -103,7 +103,7 @@ namespace WebApplication1.Tests
             Double First = 1.0;
             Double Secound = 6.0;
             Double Result = 0.16667; // 實際值: 0.166666....
-            IsTrue = TestArithmeticBase.ArithmeticFifth(First, Secound);
+            IsTrue = TestArithmeticBase.Division(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
 
@@ -117,7 +117,7 @@ namespace WebApplication1.Tests
             Double First = 1.0;
             Double Secound = -6.0;
             Double Result = -0.16667; // 實際值: -0.166666....
-            IsTrue = TestArithmeticBase.ArithmeticFifth(First, Secound);
+            IsTrue = TestArithmeticBase.Division(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
 
@@ -131,7 +131,7 @@ namespace WebApplication1.Tests
             Double First = -1.0;
             Double Secound = -6.0;
             Double Result = 0.16667; // 實際值: 0.166666....
-            IsTrue = TestArithmeticBase.ArithmeticFifth(First, Secound);
+            IsTrue = TestArithmeticBase.Division(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
     }

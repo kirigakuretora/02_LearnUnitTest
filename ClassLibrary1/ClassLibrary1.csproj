@@ -11,6 +11,13 @@
     <AssemblyName>ClassLibrary1</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PrimaryVersionType>AssemblyInfoVersionAttribute</PrimaryVersionType>
+    <AssemblyInfoFilePath>Properties\AssemblyInfo.cs</AssemblyInfoFilePath>
+    <UpdateAssemblyVersion>True</UpdateAssemblyVersion>
+    <UpdateAssemblyFileVersion>True</UpdateAssemblyFileVersion>
+    <UpdateAssemblyInfoVersion>False</UpdateAssemblyInfoVersion>
+    <AssemblyVersionSettings>None.None.IncrementOnDemand.None</AssemblyVersionSettings>
+    <AssemblyFileVersionSettings>None.None.IncrementOnDemand.None</AssemblyFileVersionSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

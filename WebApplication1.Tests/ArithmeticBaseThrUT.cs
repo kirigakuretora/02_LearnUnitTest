@@ -38,7 +38,7 @@ namespace WebApplication1.Tests
                 { 4, 5 }
             };
             Int32 Result = 15;
-            IsTrue = TestArithmeticBaseThr.Arithmetic(First);
+            IsTrue = TestArithmeticBaseThr.DictionarySigma(First);
             Assert.AreEqual(Result, IsTrue);
         }
 
@@ -59,7 +59,7 @@ namespace WebApplication1.Tests
                 { 4, -5 }
             };
             Int32 Result = -3;
-            IsTrue = TestArithmeticBaseThr.Arithmetic(First);
+            IsTrue = TestArithmeticBaseThr.DictionarySigma(First);
             Assert.AreEqual(Result, IsTrue);
 
         }
@@ -73,7 +73,7 @@ namespace WebApplication1.Tests
             var TestArithmeticBaseThr = new ArithmeticBaseThr();
             var First = new Int32[] { 1, 2, 3, 4, 5 };
             Int32 Result = 15;
-            IsTrue = TestArithmeticBaseThr.ArithmeticThird(First);
+            IsTrue = TestArithmeticBaseThr.ArraryListSigma(First);
             Assert.AreEqual(Result, IsTrue);
         }
 
@@ -86,7 +86,7 @@ namespace WebApplication1.Tests
             var TestArithmeticBaseThr = new ArithmeticBaseThr();
             var First = new Int32[] { -1, 2, -3, 4,-5 };
             Int32 Result = -3;
-            IsTrue = TestArithmeticBaseThr.ArithmeticThird(First);
+            IsTrue = TestArithmeticBaseThr.ArraryListSigma(First);
             Assert.AreEqual(Result, IsTrue);
         }
     }

@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace WebApplication1.controllers
 {
-    public class HomeController :System.Web.Mvc.Controller
+    public class HomeController : System.Web.Mvc.Controller
     {
         // GET: Home
         public ActionResult Index()
@@ -15,9 +15,9 @@ namespace WebApplication1.controllers
             var ResultVersion = ArithmeticAssembly.GetArithmeticAssemblyVersion.version;
 
             var RelArithmeticBase = new ArithmeticBase();
-            var Result = RelArithmeticBase.Arithmetic(1, 1);
-            var ResultSecound = RelArithmeticBase.ArithmeticSecound(2.0, 2.1);
-            var ResultThird = RelArithmeticBase.ArithmeticFifth(22.0, -7.0);
+            var Result = RelArithmeticBase.Addition(1, 1);
+            var ResultSecound = RelArithmeticBase.AdditionSecound(2.0, 2.1);
+            var ResultThird = RelArithmeticBase.Division(22.0, -7.0);
 
             ViewData["ResultVersion"] = ResultVersion;
             ViewData["Result"] = Result;
@@ -27,6 +27,6 @@ namespace WebApplication1.controllers
             return View();
         }
 
-        
+
     }
 }

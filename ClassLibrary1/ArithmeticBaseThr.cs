@@ -14,11 +14,11 @@ namespace ClassLibrary1
         }
 
         /// <summary>
-        /// Arithmetics the specified first.
+        /// Dictionaries the sigma.
         /// </summary>
         /// <param name="First">The first.</param>
         /// <returns></returns>
-        public Int32 Arithmetic(Dictionary<Int32,Int32> First)
+        public Int32 DictionarySigma(Dictionary<Int32,Int32> First)
         {          
             foreach (var Sum in First)
             {
@@ -28,11 +28,11 @@ namespace ClassLibrary1
         }
 
         /// <summary>
-        /// Arithmetics the secound.
+        /// Sortedlist the sigma.
         /// </summary>
         /// <param name="First">The first.</param>
         /// <returns></returns>
-        public Int32 ArithmeticSecound(SortedList<Int32, Int32> First)
+        public Int32 SortedListSigma(SortedList<Int32, Int32> First)
         {
             foreach (var Sum in First)
             {
@@ -42,11 +42,11 @@ namespace ClassLibrary1
         }
 
         /// <summary>
-        /// Arithmetics the third.
+        /// Arrarylist the  sigma.
         /// </summary>
         /// <param name="First">The first.</param>
         /// <returns></returns>
-        public Int32 ArithmeticThird(Int32[] First)
+        public Int32 ArraryListSigma(Int32[] First)
         {
             foreach (var Sum in First)
             {
@@ -56,11 +56,11 @@ namespace ClassLibrary1
         }
 
         /// <summary>
-        /// Arithmetics the fourth.
+        /// Lists the sigma.
         /// </summary>
         /// <param name="First">The first.</param>
         /// <returns></returns>
-        public Int32 ArithmeticFourth(List<Int32>First)
+        public Int32 ListSigma(List<Int32>First)
         {
             foreach (var Sum in First)
             {
