@@ -1,13 +1,15 @@
 # LearnUnitTest
 以四則運算(Elementary arithmetic)為例子實作演算法單元測試。
 
-## 1st.專案結構
+## 1st. Guide 專案結構
 * ClassLibrary1 : 四則運算函式庫。
 * WebApplication1 : 四則運算輸出Web Application，使用MVC輸出。 
 * WebApplication1.Tests : 單元測試ClassLibrary1四則運算函式庫。
 
-## 2nd.呼叫範例
+## 2nd. Technologies 技術
+* C#+MVC
 
+## 3rd. Example 呼叫範例
 ```cs
  public ActionResult Index()
  {
