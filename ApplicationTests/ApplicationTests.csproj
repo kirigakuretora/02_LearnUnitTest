@@ -6,8 +6,8 @@
     <ProjectGuid>{A4999FEB-0AEC-40FE-8BF0-18E9C1CC4F50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebApplication1.Tests</RootNamespace>
-    <AssemblyName>WebApplication1.Tests</AssemblyName>
+    <RootNamespace>ApplicationTests</RootNamespace>
+    <AssemblyName>ApplicationTests</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -54,13 +54,13 @@
     <Compile Include="ArithmeticBaseSecUT.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+    <ProjectReference Include="..\ApplicationLibrary\ApplicationLibrary.csproj">
       <Project>{e74342b2-8ad9-4087-9510-5429b2c83c8b}</Project>
-      <Name>ClassLibrary1</Name>
+      <Name>ApplicationLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WebApplication1\WebApplication1.csproj">
+    <ProjectReference Include="..\ApplicationClient\ApplicationClient.csproj">
       <Project>{D66AC829-E3C4-4827-9AE0-B5225034BAD2}</Project>
-      <Name>WebApplication1</Name>
+      <Name>ApplicationClient</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
