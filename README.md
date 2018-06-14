@@ -4,8 +4,8 @@
 
 ## 1. Features【功能】
 * PortalLibrary: 四則運算函式庫。
-* Portal : 四則運算輸出Web Application，使用MVC輸出。 
-* PortalTests: 單元測試ApplicationLibrary四則運算函式庫。
+* Portal : 四則運算輸出Application，使用MVC輸出。 
+* PortalTests: 單元測試PortalLibrary四則運算函式庫。
 
 ## 2. Platforms【程式平台】
 * C#+MVC
