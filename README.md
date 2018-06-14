@@ -2,7 +2,7 @@
 
 以四則運算(Elementary arithmetic)為例子實作演算法單元測試。
 
-## 1. Prject Features【功能】
+## 1. Features【功能】
 * PortalLibrary: 四則運算函式庫。
 * Portal : 四則運算輸出Web Application，使用MVC輸出。 
 * PortalTests: 單元測試ApplicationLibrary四則運算函式庫。
