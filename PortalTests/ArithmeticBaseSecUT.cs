@@ -1,14 +1,14 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ClassLibrary1;
+using PortalLibrary;
 
-namespace WebApplication1.Tests
+namespace PortalTests.Tests
 {
     [TestClass]
-    public class ArithmeticBaseUT
+    public class ArithmeticBaseSecUT
     {
         /// <summary>
-        /// Generic Result
+        /// Note:  Generic  Result
         /// </summary>
         private Object IsTrue;
         private void SetIsTrue<T>(T tIsTrue)
@@ -21,61 +21,60 @@ namespace WebApplication1.Tests
             return (T)IsTrue;
         }
 
+
         /// <summary>
-        /// Int32 + Int32 = Int32
+        /// Note: Int32 + Int32 = Int32
         /// </summary>
         [TestMethod()]
-        public void TestMethod1()
+        public void TestMethod4()
         {
-            var TestArithmeticBase = new ArithmeticBase();
+            var TestArithmeticBaseSec = new ArithmeticBaseSec();
             Int32 First = 1;
             Int32 Secound = 2;
             Int32 Result = 3;
-            IsTrue = TestArithmeticBase.Addition(First, Secound);
+            IsTrue = TestArithmeticBaseSec.Addition(First, Secound);
             Assert.AreEqual(Result, IsTrue);
-
         }
 
-
         /// <summary>
-        /// Double + Double = Double
+        /// Note: Double + Double = Double
         /// </summary>
         [TestMethod()]
-        public void TestMethod2()
+        public void TestMethod5()
         {
-            var TestArithmeticBase = new ArithmeticBase();
+            var TestArithmeticBaseSec = new ArithmeticBaseSec();
             Double First = 50.1;
             Double Secound = 70.1;
             Double Result = 120.2;
-            IsTrue = TestArithmeticBase.AdditionSecound(First, Secound);
+            IsTrue = TestArithmeticBaseSec.AdditionSecound(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
 
         /// <summary>
-        /// Double + Int32 = Double
+        /// Note: Double + Int32 = Double
         /// </summary>
         [TestMethod()]
-        public void TestMethod3()
+        public void TestMethod6()
         {
-            var TestArithmeticBase = new ArithmeticBase();
+            var TestArithmeticBaseSec = new ArithmeticBaseSec();
             Double First = 1.9;
             Int32 Secound = 1;
             Double Result = 2.9;
-            IsTrue = TestArithmeticBase.AdditionSecound(First, Secound);
+            IsTrue = TestArithmeticBaseSec.AdditionSecound(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
 
         /// <summary>
-        /// Tests the repeating decimal method.
+        /// Note: Tests the repeating decimal method.
         /// </summary>
         [TestMethod()]
         public void TestRepeatingDecimalMethod()
         {
-            var TestArithmeticBase = new ArithmeticBase();
+            var TestArithmeticBaseSec = new ArithmeticBaseSec();
             Double First = 1.0;
             Double Secound = 3;
-            Double Result = 0.33333; // 實際值: 0.333333.....
-            IsTrue = TestArithmeticBase.Division(First, Secound);
+            Double Result = 0.33333; // Note:  實際值: 0.333333.....
+            IsTrue = TestArithmeticBaseSec.Division(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
 
@@ -85,11 +84,11 @@ namespace WebApplication1.Tests
         [TestMethod()]
         public void TestCirculatingDecimalMethod()
         {
-            var TestArithmeticBase = new ArithmeticBase();
+            var TestArithmeticBaseSec = new ArithmeticBaseSec();
             Double First = 22.0;
             Double Secound = 7.0;
-            Double Result = 3.14286; // 實際值: 3.142857.....
-            IsTrue = TestArithmeticBase.Division(First, Secound);
+            Double Result = 3.14286; // Note:  實際值: 3.142857.....
+            IsTrue = TestArithmeticBaseSec.Division(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
 
@@ -99,11 +98,11 @@ namespace WebApplication1.Tests
         [TestMethod()]
         public void TestCirculatingDecimalSecoundMethod()
         {
-            var TestArithmeticBase = new ArithmeticBase();
+            var TestArithmeticBaseSec = new ArithmeticBaseSec();
             Double First = 1.0;
             Double Secound = 6.0;
-            Double Result = 0.16667; // 實際值: 0.166666....
-            IsTrue = TestArithmeticBase.Division(First, Secound);
+            Double Result = 0.16667; //Note:  實際值: 0.166666....
+            IsTrue = TestArithmeticBaseSec.Division(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
 
@@ -116,7 +115,7 @@ namespace WebApplication1.Tests
             var TestArithmeticBase = new ArithmeticBase();
             Double First = 1.0;
             Double Secound = -6.0;
-            Double Result = -0.16667; // 實際值: -0.166666....
+            Double Result = -0.16667; // Note: 實際值: -0.166666....
             IsTrue = TestArithmeticBase.Division(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
@@ -130,10 +129,9 @@ namespace WebApplication1.Tests
             var TestArithmeticBase = new ArithmeticBase();
             Double First = -1.0;
             Double Secound = -6.0;
-            Double Result = 0.16667; // 實際值: 0.166666....
+            Double Result = 0.16667; // Note: 實際值: 0.166666....
             IsTrue = TestArithmeticBase.Division(First, Secound);
             Assert.AreEqual(Result, IsTrue);
         }
     }
-
 }

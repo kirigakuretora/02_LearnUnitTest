@@ -1,11 +1,7 @@
-﻿using ClassLibrary1;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using PortalLibrary;
 using System.Web.Mvc;
 
-namespace WebApplication1.controllers
+namespace Portal.controllers
 {
     public class HomeController : System.Web.Mvc.Controller
     {

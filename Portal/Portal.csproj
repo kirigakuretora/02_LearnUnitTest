@@ -161,9 +161,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ApplicationLibrary\ApplicationLibrary.csproj">
+    <ProjectReference Include="..\PortalLibrary\PortalLibrary.csproj">
       <Project>{e74342b2-8ad9-4087-9510-5429b2c83c8b}</Project>
-      <Name>ApplicationLibrary</Name>
+      <Name>PortalLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

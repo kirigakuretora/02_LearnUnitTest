@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Reflection;
 
-namespace ClassLibrary1
+namespace PortalLibrary
 {
     public class ArithmeticAssembly
     {

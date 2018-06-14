@@ -1,15 +1,15 @@
-﻿using ClassLibrary1;
+﻿using PortalLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 
-namespace WebApplication1.Tests
+namespace PortalTests.Tests
 {
     [TestClass]
     public class ArithmeticBaseThrUT
     {
         /// <summary>
-        /// Generic Result
+        /// Note: Generic Result
         /// </summary>
         private Object IsTrue;
         private void SetIsTrue<T>(T tIsTrue)
@@ -23,7 +23,7 @@ namespace WebApplication1.Tests
         }
 
         /// <summary>
-        /// Tests the dictionary method.
+        /// Note: Tests the dictionary method.
         /// </summary>
         [TestMethod()]
         public void TestDictionaryMethod()
@@ -44,7 +44,7 @@ namespace WebApplication1.Tests
 
 
         /// <summary>
-        /// Tests the dictionary decima method.
+        /// Note: Tests the dictionary decima method.
         /// </summary>
         [TestMethod()]
         public void TestDictionaryDecimaMethod()
@@ -65,7 +65,7 @@ namespace WebApplication1.Tests
         }
 
         /// <summary>
-        /// Tests the arrary list method.
+        /// Note: Tests the arrary list method.
         /// </summary>
         [TestMethod()]
         public void TestArraryListMethod()
@@ -78,7 +78,7 @@ namespace WebApplication1.Tests
         }
 
         /// <summary>
-        /// Tests the arrary list decima method.
+        /// Note: Tests the arrary list decima method.
         /// </summary>
         [TestMethod()]
         public void TestArraryListDecimaMethod()

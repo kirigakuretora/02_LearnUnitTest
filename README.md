@@ -2,9 +2,9 @@
 以四則運算(Elementary arithmetic)為例子實作演算法單元測試。
 
 ## 1. 專案結構
-* ApplicationLibrary : 四則運算函式庫。
-* ApplicationClient : 四則運算輸出Web Application，使用MVC輸出。 
-* ApplicationTests: 單元測試ApplicationLibrary四則運算函式庫。
+* PortalLibrary: 四則運算函式庫。
+* Portal : 四則運算輸出Web Application，使用MVC輸出。 
+* PortalTests: 單元測試ApplicationLibrary四則運算函式庫。
 
 ## 2. 輸出方式
 * C#+MVC

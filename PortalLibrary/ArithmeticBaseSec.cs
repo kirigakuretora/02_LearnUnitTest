@@ -1,20 +1,34 @@
 ﻿using System;
 
-namespace ClassLibrary1
+namespace PortalLibrary
 {
 
-    public sealed class ArithmeticBase
+    public sealed class ArithmeticBaseSec
     {
         /// <summary>
-        /// Additions the specified first.
+        ///  Generic Result
+        /// </summary>
+        private object Result;
+        private void SetResult<T>(T tResult) 
+        {
+            Result = tResult;
+        }
+
+        public T GetResult<T>()
+        {
+            return (T)Result;
+        }
+
+        /// <summary>
+        /// Arithmetics the specified first.
         /// </summary>
         /// <param name="First">The first.</param>
         /// <param name="Secound">The secound.</param>
         /// <returns></returns>
         public Int32 Addition(Int32 First, Int32 Secound)
         {
-            Int32 Result = First + Secound;
-            return Result;
+            Result = First + Secound;
+            return (Int32)Result;
         }
 
         /// <summary>
@@ -25,8 +39,8 @@ namespace ClassLibrary1
         /// <returns></returns>
         public Double AdditionSecound(Double First, Double Secound)
         {
-            Double Result = Math.Round(First + Secound,5, MidpointRounding.AwayFromZero);
-            return Result;
+            Result = Math.Round(First + Secound, 5, MidpointRounding.AwayFromZero);
+            return (Double)Result;
         }
 
         /// <summary>
@@ -37,8 +51,8 @@ namespace ClassLibrary1
         /// <returns></returns>
         public Int32 Subtraction(Int32 First, Int32 Secound)
         {
-            Int32 Result = First - Secound;
-            return Result;
+            Result = First - Secound;
+            return (Int32)Result;
         }
 
         /// <summary>
@@ -49,8 +63,8 @@ namespace ClassLibrary1
         /// <returns></returns>
         public Int32 Multiplication(Int32 First, Int32 Secound)
         {
-            Int32 Result = First * Secound;
-            return Result;
+            Result = First * Secound;
+            return (Int32)Result;
         }
 
         /// <summary>
@@ -61,8 +75,9 @@ namespace ClassLibrary1
         /// <returns></returns>
         public Double Division(Double First, Double Secound)
         {
-            Double Result = Math.Round(First / Secound,5, MidpointRounding.AwayFromZero);
-            return Result;
+            Result = Math.Round(First / Secound, 5, MidpointRounding.AwayFromZero);
+            return (Double)Result;
         }
+
     }
 }
