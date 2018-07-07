@@ -44,6 +44,29 @@ namespace PortalLibrary
         }
 
         /// <summary>
+        /// Arithmetics the specified first.
+        /// </summary>
+        /// <param name="First">The first.</param>
+        /// <param name="Secound">The secound.</param>
+        /// <returns></returns>
+        public Int32 AdditionThrid(Int32 First, Int32 Secound)
+        {
+            try
+            {
+                checked
+                {
+                    Result = First + Secound;
+                    return (Int32)Result;
+                }
+            }
+            catch (System.OverflowException)
+            {
+                return -1;
+            }
+        }
+
+
+        /// <summary>
         /// Subtractions the specified first.
         /// </summary>
         /// <param name="First">The first.</param>

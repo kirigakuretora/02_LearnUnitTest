@@ -21,6 +21,19 @@ namespace PortalTests.Tests
             return (T)IsTrue;
         }
 
+        /// <summary>
+        /// Note: 2147483647 + 1 = -1 (越位反轉)
+        /// </summary>
+        [TestMethod()]
+        public void AdditionThridOverflow()
+        {
+            var TestArithmeticBaseSec = new ArithmeticBaseSec();
+            Int32 First = 2147483647;
+            Int32 Secound = 1;
+            Int32 Result = -1;
+            IsTrue = TestArithmeticBaseSec.AdditionThrid(First, Secound);
+            Assert.AreEqual(Result, IsTrue);
+        }
 
         /// <summary>
         /// Note: Int32 + Int32 = Int32
