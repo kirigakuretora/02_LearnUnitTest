@@ -5,17 +5,15 @@
 
 <h2 style="color:darkorange">M<span style="color:black">ethod Result Page</span></h2>    
 
-    <table class="table table-hover">
-        <tr>
-            <th>Result</th>
-            <td>@ViewData["Result"]</td>
-        </tr>
-        <tr>
-            <th>ResultSecound</th>
-            <td>@ViewData["ResultSecound"]</td>
-        </tr>
-        <tr>
-            <th>ResultSecound</th>
-            <td>@ViewData["ResultThird"]</td>
-        </tr>     
-    </table>
+@model List<Double>
+    
+<table>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(X => item);
+        </td>
+    </tr>
+}
+</table>
